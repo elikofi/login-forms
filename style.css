@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*the styling for the main container*/
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+}
+
+
+/* styling for the God of War form starts here.*/
+.gow-container {
+    width: 350px;
+    height: 550px;
+    margin: 100px auto 100px auto;
+    box-shadow: -5px -5px 5px 2px rgb(255, 255, 255), 5px 5px 10px 1px rgb(135, 135, 135);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.gow-logo-container {   /* styling for the God of War logo*/
+    width: 80px;
+    margin: 40px auto 20px auto;
+    border-radius: 50px;
+}
+.gow-logo {
+    width: 100%;
+}
+.gow-header {
+    margin: 0;
+}
+h2 {                    /*styling for the texts*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 72px;
+    background: -webkit-linear-gradient(45deg, red, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: xx-large;
+    font-weight: 700
+}
+.details {                /*styling for the inputs and buttons start here*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    position: relative;
+    right: 129px;
+    top: 30px;
+    color: gray;
+    font-size: large;
+}
+.gow-input {
+    margin-top: -10px;
+    font-size: medium;
+    width: 300px;
+    padding: 12px 12px 12px 36px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: -5px -5px 5px 2px rgb(255, 255, 255) inset, 2px 2px 10px 2px rgb(193, 193, 193) inset;
+}
+.gow-input:focus {
+    outline: none;
+    transform: scale(1.02, 1.02);
+    transition: 0.25s;
+}
+.gow-but {                  /*styling for the God of War sign in button*/
+    width: 300px;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, red, black);
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.gow-but:hover span {
+    padding-right: 25px;
+}
+.gow-but:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.gow-but span {
+    transition: 0.5s;
+}
+.gow-but span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+.gow-but:hover {
+    background: linear-gradient(45deg, black, red);
+}
+h4 {
+    font-family: Roboto, Arial;
+}
+.reset-link {
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, red, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} /*End of styling for the God of War sign in form.*/
+
+
+
+
+
+/*styling for the second login form starts here.*/
+
+.box {                  /*styling for the main container*/
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, purple , rgb(80, 132, 80));
+    justify-content: center;
+    align-items: center;
+}
+.login-container {       /*styling for the inner container*/
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(178, 126, 178) , rgb(146, 172, 146)); 
+    color: white;
+    font-family: Roboto, Arial;
+}
+.header {
+    text-align: center;
+    padding-top: 15px;
+}
+.address {                /*styling for the inputs begin here*/
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 40px auto 40px auto;
+}
+.enter {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: large;
+    color: white;
+}
+.enter:focus {
+    outline: none;
+}
+.links {                  /*styling for the anchor tags*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.submit {
+    width: 130px;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    font-size: medium;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px lightcyan;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(192, 163, 192) , rgb(177, 199, 177));
+}
+.submit:hover {
+    box-shadow: none;
+    text-shadow: 0 0 2px lightcyan;
+}
+
+#forgot-pw {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+#forgot-pw:hover {
+    text-shadow: 0 0 2px lightcyan;
+}
+/*end of styling for the second login form*/
